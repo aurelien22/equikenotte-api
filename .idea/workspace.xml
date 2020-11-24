@@ -16,7 +16,21 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f80851d-ec6c-4420-b561-a7e8d2dc3b14" name="Default Changelist" comment="" />
+    <list default="true" id="7f80851d-ec6c-4420-b561-a7e8d2dc3b14" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/equikenotte.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/equikenotte.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/api_platform.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/api_platform.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/preload.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/preload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/bootstrap.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,9 +150,16 @@
       <path value="$PROJECT_DIR$/vendor/willdurand/negotiation" />
       <path value="$PROJECT_DIR$/vendor/nelmio/cors-bundle" />
       <path value="$PROJECT_DIR$/vendor/api-platform/core" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/bin/.phpunit" />
+      <path value="$PROJECT_DIR$/vendor/squizlabs/php_codesniffer" />
     </include_path>
   </component>
   <component name="ProjectId" id="1khEgIqv2VvbTbxzaowDufENJ2v" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -159,7 +180,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606144532448</updated>
-      <workItem from="1606144533466" duration="5389000" />
+      <workItem from="1606144533466" duration="10402000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1606145361441</created>
@@ -202,10 +223,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="594" y="400" key="#com.intellij.ide.util.MemberChooser" timestamp="1606152545986">
+    <state x="594" y="400" key="#com.intellij.ide.util.MemberChooser" timestamp="1606206902034">
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
-    <state x="594" y="400" key="#com.intellij.ide.util.MemberChooser/0.25.2560.1415@0.25.2560.1415" timestamp="1606152545986" />
+    <state x="594" y="400" key="#com.intellij.ide.util.MemberChooser/0.25.2560.1415@0.25.2560.1415" timestamp="1606206902034" />
     <state x="823" y="207" width="1510" height="1109" key="CommitChangelistDialog2" timestamp="1606145361351">
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
@@ -214,9 +235,13 @@
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
     <state x="879" y="154" width="1030" height="602" key="Github.ShareDialog/0.25.2560.1415@0.25.2560.1415" timestamp="1606145114920" />
-    <state x="477" y="454" key="Vcs.Push.Dialog.v2" timestamp="1606201111207">
+    <state x="368" y="444" key="NewPhpClassDialog" timestamp="1606206866106">
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
-    <state x="477" y="454" key="Vcs.Push.Dialog.v2/0.25.2560.1415@0.25.2560.1415" timestamp="1606201111207" />
+    <state x="368" y="444" key="NewPhpClassDialog/0.25.2560.1415@0.25.2560.1415" timestamp="1606206866106" />
+    <state x="477" y="454" key="Vcs.Push.Dialog.v2" timestamp="1606201280174">
+      <screen x="0" y="25" width="2560" height="1415" />
+    </state>
+    <state x="477" y="454" key="Vcs.Push.Dialog.v2/0.25.2560.1415@0.25.2560.1415" timestamp="1606201280174" />
   </component>
 </project>
