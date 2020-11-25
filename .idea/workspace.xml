@@ -17,8 +17,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f80851d-ec6c-4420-b561-a7e8d2dc3b14" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/DentistFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/DentistFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Dentist.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Dentist.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,9 +159,18 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -169,7 +180,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606144532448</updated>
-      <workItem from="1606144533466" duration="10735000" />
+      <workItem from="1606144533466" duration="12570000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1606145361441</created>
@@ -185,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606224214142</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Second try continuous integration (PHPUnit + PHPCS (PSR12))">
+      <created>1606224494327</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606224494327</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,17 +235,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="First try continuous integration (PHPUnit + PHPCS (PSR12))" />
-    <option name="LAST_COMMIT_MESSAGE" value="First try continuous integration (PHPUnit + PHPCS (PSR12))" />
+    <MESSAGE value="Second try continuous integration (PHPUnit + PHPCS (PSR12))" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second try continuous integration (PHPUnit + PHPCS (PSR12))" />
   </component>
   <component name="WindowStateProjectService">
     <state x="594" y="400" key="#com.intellij.ide.util.MemberChooser" timestamp="1606206902034">
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
     <state x="594" y="400" key="#com.intellij.ide.util.MemberChooser/0.25.2560.1415@0.25.2560.1415" timestamp="1606206902034" />
-    <state x="823" y="207" width="1510" height="1109" key="CommitChangelistDialog2" timestamp="1606224214035">
+    <state x="823" y="207" width="1510" height="1109" key="CommitChangelistDialog2" timestamp="1606224494248">
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
-    <state x="823" y="207" width="1510" height="1109" key="CommitChangelistDialog2/0.25.2560.1415@0.25.2560.1415" timestamp="1606224214035" />
+    <state x="823" y="207" width="1510" height="1109" key="CommitChangelistDialog2/0.25.2560.1415@0.25.2560.1415" timestamp="1606224494248" />
     <state x="879" y="154" width="1030" height="602" key="Github.ShareDialog" timestamp="1606145114920">
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
@@ -236,9 +255,9 @@
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
     <state x="368" y="444" key="NewPhpClassDialog/0.25.2560.1415@0.25.2560.1415" timestamp="1606206866106" />
-    <state x="477" y="454" key="Vcs.Push.Dialog.v2" timestamp="1606224227344">
+    <state x="477" y="454" key="Vcs.Push.Dialog.v2" timestamp="1606224502407">
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
-    <state x="477" y="454" key="Vcs.Push.Dialog.v2/0.25.2560.1415@0.25.2560.1415" timestamp="1606224227344" />
+    <state x="477" y="454" key="Vcs.Push.Dialog.v2/0.25.2560.1415@0.25.2560.1415" timestamp="1606224502407" />
   </component>
 </project>

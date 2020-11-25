@@ -29,11 +29,6 @@ class Dentist extends User implements UserInterface
     private $siret;
 
     /**
-     * @ORM\Column(type="boolean", nullable=false)
-     */
-    private $isAdmin;
-
-    /**
      * @ORM\Column(type="json")
      */
     private $roles = [];
@@ -96,22 +91,6 @@ class Dentist extends User implements UserInterface
     public function setSiret($siret): void
     {
         $this->siret = $siret;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getIsAdmin()
-    {
-        return $this->isAdmin;
-    }
-
-    /**
-     * @param mixed $isAdmin
-     */
-    public function setIsAdmin($isAdmin): void
-    {
-        $this->isAdmin = $isAdmin;
     }
 
     /**

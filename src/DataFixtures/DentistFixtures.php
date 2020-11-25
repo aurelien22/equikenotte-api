@@ -32,7 +32,6 @@ class DentistFixtures extends Fixture
         $dentist->setTradename("Leslie Serret dentiste équin");
         $dentist->setSiret("110393927271122333");
         $dentist->setPassword($this->encoder->encodePassword($dentist, "password"));
-        $dentist->setIsAdmin(false);
         $dentist->setName("Leslie");
         $dentist->setSurname("Serret");
         $dentist->setAddress("Rue de morlaix");
@@ -49,7 +48,6 @@ class DentistFixtures extends Fixture
         $dentist->setTradename("Administrateur");
         $dentist->setSiret("222299002929818272727271");
         $dentist->setPassword($this->encoder->encodePassword($dentist, "password"));
-        $dentist->setIsAdmin(true);
         $dentist->setName("Aurélien");
         $dentist->setSurname("Dincuff");
         $dentist->setAddress("Rue de CLaire vue");
