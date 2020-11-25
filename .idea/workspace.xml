@@ -17,10 +17,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f80851d-ec6c-4420-b561-a7e8d2dc3b14" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/DentistFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/DentistFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Dentist.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Dentist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +178,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606144532448</updated>
-      <workItem from="1606144533466" duration="12570000" />
+      <workItem from="1606144533466" duration="12792000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1606145361441</created>
@@ -255,9 +253,9 @@
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
     <state x="368" y="444" key="NewPhpClassDialog/0.25.2560.1415@0.25.2560.1415" timestamp="1606206866106" />
-    <state x="477" y="454" key="Vcs.Push.Dialog.v2" timestamp="1606224502407">
+    <state x="470" y="308" key="Vcs.Push.Dialog.v2" timestamp="1606286251705">
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
-    <state x="477" y="454" key="Vcs.Push.Dialog.v2/0.25.2560.1415@0.25.2560.1415" timestamp="1606224502407" />
+    <state x="470" y="308" key="Vcs.Push.Dialog.v2/0.25.2560.1415@0.25.2560.1415" timestamp="1606286251705" />
   </component>
 </project>
