@@ -15,7 +15,7 @@ class AuthenticationTest extends ApiTestCase
         $this->assertResponseStatusCodeSame('401');
     }
 
-    public function testAccessToDentistsListWithTrueCredentials(): void
+    public function testGetTokenWithTrueCredentials(): void
     {
 
         $response = static::createClient()->request('POST', '/api/login_check', [
@@ -27,16 +27,27 @@ class AuthenticationTest extends ApiTestCase
         ]);
 
         $this->assertResponseStatusCodeSame('200');
-
+        /*
         $arrayResponse = $response->toArray();
         $token1 = $arrayResponse['token'];
-
-        echo($token1);
 
         static::createClient()->request('GET', '/api/dentists', [
             'headers' => ['Authorization' => "Bearer $token1"]
         ]);
 
-        $this->assertResponseStatusCodeSame('200');
+        $this->assertResponseStatusCodeSame('200');*/
+    }
+
+    public function testGetTokenWithBadCredentials(): void
+    {
+        $response = static::createClient()->request('POST', '/api/login_check', [
+            'headers' => ['Content-Type' => 'application/json'],
+            'json' => [
+                'username' => 'leslie',
+                'password' => 'passwor'
+            ]
+        ]);
+
+        $this->assertResponseStatusCodeSame('401');
     }
 }

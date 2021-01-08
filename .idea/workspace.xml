@@ -16,12 +16,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f80851d-ec6c-4420-b561-a7e8d2dc3b14" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.test" beforeDir="false" afterPath="$PROJECT_DIR$/.env.test" afterDir="false" />
+    <list default="true" id="7f80851d-ec6c-4420-b561-a7e8d2dc3b14" name="Default Changelist" comment="MAJ badge in README.MD">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/AuthenticationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AuthenticationTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +184,7 @@
       <workItem from="1606144533466" duration="18493000" />
       <workItem from="1606475578577" duration="10263000" />
       <workItem from="1608543608669" duration="1840000" />
-      <workItem from="1610037964582" duration="13242000" />
+      <workItem from="1610037964582" duration="14325000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1606145361441</created>
@@ -263,10 +260,10 @@
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
     <state x="391" y="454" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.25.2560.1415@0.25.2560.1415" timestamp="1606464855731" />
-    <state x="823" y="207" width="1510" height="1109" key="CommitChangelistDialog2" timestamp="1606286439620">
+    <state x="823" y="207" width="1510" height="1109" key="CommitChangelistDialog2" timestamp="1610116127366">
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
-    <state x="823" y="207" width="1510" height="1109" key="CommitChangelistDialog2/0.25.2560.1415@0.25.2560.1415" timestamp="1606286439620" />
+    <state x="823" y="207" width="1510" height="1109" key="CommitChangelistDialog2/0.25.2560.1415@0.25.2560.1415" timestamp="1610116127366" />
     <state x="879" y="154" width="1030" height="602" key="Github.ShareDialog" timestamp="1606145114920">
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
