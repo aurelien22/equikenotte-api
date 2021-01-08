@@ -11,22 +11,17 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:develop" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:production" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f80851d-ec6c-4420-b561-a7e8d2dc3b14" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/equikenotte.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/equikenotte.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.test" beforeDir="false" afterPath="$PROJECT_DIR$/.env.test" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +185,9 @@
       <option name="presentableId" value="Default" />
       <updated>1606144532448</updated>
       <workItem from="1606144533466" duration="18493000" />
-      <workItem from="1606475578577" duration="393000" />
+      <workItem from="1606475578577" duration="10263000" />
+      <workItem from="1608543608669" duration="1840000" />
+      <workItem from="1610037964582" duration="13242000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1606145361441</created>
@@ -237,7 +234,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="develop" />
+                        <option value="production" />
                       </list>
                     </value>
                   </entry>
@@ -278,9 +275,13 @@
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
     <state x="368" y="444" key="NewPhpClassDialog/0.25.2560.1415@0.25.2560.1415" timestamp="1606206866106" />
-    <state x="470" y="308" key="Vcs.Push.Dialog.v2" timestamp="1606286444080">
+    <state x="672" y="660" key="NewPhpFileDialog" timestamp="1610094549172">
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
-    <state x="470" y="308" key="Vcs.Push.Dialog.v2/0.25.2560.1415@0.25.2560.1415" timestamp="1606286444080" />
+    <state x="672" y="660" key="NewPhpFileDialog/0.25.2560.1415@0.25.2560.1415" timestamp="1610094549172" />
+    <state x="470" y="308" key="Vcs.Push.Dialog.v2" timestamp="1608544056436">
+      <screen x="0" y="25" width="2560" height="1415" />
+    </state>
+    <state x="470" y="308" key="Vcs.Push.Dialog.v2/0.25.2560.1415@0.25.2560.1415" timestamp="1608544056436" />
   </component>
 </project>
