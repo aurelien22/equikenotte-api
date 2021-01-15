@@ -11,21 +11,20 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:develop" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:production" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f80851d-ec6c-4420-b561-a7e8d2dc3b14" name="Default Changelist" comment="">
+    <list default="true" id="7f80851d-ec6c-4420-b561-a7e8d2dc3b14" name="Default Changelist" comment="MAJ badge in README.MD">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -143,6 +142,9 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
       <path value="$PROJECT_DIR$/vendor/bin/.phpunit" />
       <path value="$PROJECT_DIR$/vendor/squizlabs/php_codesniffer" />
+      <path value="$PROJECT_DIR$/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/lexik/jwt-authentication-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1khEgIqv2VvbTbxzaowDufENJ2v" />
@@ -178,7 +180,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606144532448</updated>
-      <workItem from="1606144533466" duration="12792000" />
+      <workItem from="1606144533466" duration="18493000" />
+      <workItem from="1606475578577" duration="10263000" />
+      <workItem from="1608543608669" duration="1840000" />
+      <workItem from="1610037964582" duration="14994000" />
+      <workItem from="1610185694587" duration="43000" />
+      <workItem from="1610693482215" duration="706000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1606145361441</created>
@@ -201,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606224494327</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="MAJ badge in README.MD">
+      <created>1606286439705</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606286439705</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +232,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="develop" />
+                        <option value="production" />
                       </list>
                     </value>
                   </entry>
@@ -229,22 +243,28 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="First try continuous integration (PHPUnit + PHPCS (PSR12))" />
     <MESSAGE value="Second try continuous integration (PHPUnit + PHPCS (PSR12))" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second try continuous integration (PHPUnit + PHPCS (PSR12))" />
+    <MESSAGE value="MAJ badge in README.MD" />
+    <option name="LAST_COMMIT_MESSAGE" value="MAJ badge in README.MD" />
   </component>
   <component name="WindowStateProjectService">
     <state x="594" y="400" key="#com.intellij.ide.util.MemberChooser" timestamp="1606206902034">
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
     <state x="594" y="400" key="#com.intellij.ide.util.MemberChooser/0.25.2560.1415@0.25.2560.1415" timestamp="1606206902034" />
-    <state x="823" y="207" width="1510" height="1109" key="CommitChangelistDialog2" timestamp="1606224494248">
+    <state x="391" y="454" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1606464855731">
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
-    <state x="823" y="207" width="1510" height="1109" key="CommitChangelistDialog2/0.25.2560.1415@0.25.2560.1415" timestamp="1606224494248" />
+    <state x="391" y="454" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.25.2560.1415@0.25.2560.1415" timestamp="1606464855731" />
+    <state x="823" y="207" width="1510" height="1109" key="CommitChangelistDialog2" timestamp="1610116127366">
+      <screen x="0" y="25" width="2560" height="1415" />
+    </state>
+    <state x="823" y="207" width="1510" height="1109" key="CommitChangelistDialog2/0.25.2560.1415@0.25.2560.1415" timestamp="1610116127366" />
     <state x="879" y="154" width="1030" height="602" key="Github.ShareDialog" timestamp="1606145114920">
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
@@ -253,9 +273,13 @@
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
     <state x="368" y="444" key="NewPhpClassDialog/0.25.2560.1415@0.25.2560.1415" timestamp="1606206866106" />
-    <state x="470" y="308" key="Vcs.Push.Dialog.v2" timestamp="1606286251705">
+    <state x="672" y="660" key="NewPhpFileDialog" timestamp="1610094549172">
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
-    <state x="470" y="308" key="Vcs.Push.Dialog.v2/0.25.2560.1415@0.25.2560.1415" timestamp="1606286251705" />
+    <state x="672" y="660" key="NewPhpFileDialog/0.25.2560.1415@0.25.2560.1415" timestamp="1610094549172" />
+    <state x="470" y="308" key="Vcs.Push.Dialog.v2" timestamp="1608544056436">
+      <screen x="0" y="25" width="2560" height="1415" />
+    </state>
+    <state x="470" y="308" key="Vcs.Push.Dialog.v2/0.25.2560.1415@0.25.2560.1415" timestamp="1608544056436" />
   </component>
 </project>
