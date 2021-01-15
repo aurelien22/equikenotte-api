@@ -19,9 +19,6 @@
     <list default="true" id="7f80851d-ec6c-4420-b561-a7e8d2dc3b14" name="Default Changelist" comment="MAJ badge in README.MD">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/DentistFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/DentistFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Customer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Dentist.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Dentist.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +186,7 @@
       <workItem from="1608543608669" duration="1840000" />
       <workItem from="1610037964582" duration="14994000" />
       <workItem from="1610185694587" duration="43000" />
-      <workItem from="1610693482215" duration="4283000" />
+      <workItem from="1610693482215" duration="4653000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1606145361441</created>
