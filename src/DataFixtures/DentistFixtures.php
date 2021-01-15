@@ -2,6 +2,7 @@
 
 namespace App\DataFixtures;
 
+use App\Entity\Customer;
 use App\Entity\Dentist;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
@@ -27,21 +28,21 @@ class DentistFixtures extends Fixture
 
     public function load(ObjectManager $manager)
     {
-        $dentist = new Dentist();
+        $dentist1 = new Dentist();
 
-        $dentist->setTradename("Leslie Serret dentiste équin");
-        $dentist->setSiret("110393927271122333");
-        $dentist->setPassword($this->encoder->encodePassword($dentist, "password"));
-        $dentist->setName("Leslie");
-        $dentist->setSurname("Serret");
-        $dentist->setAddress("Rue de morlaix");
-        $dentist->setPostalCode("29760");
-        $dentist->setCity("MORLAIX");
-        $dentist->setMail("leslie.serret@gmail.com");
-        $dentist->setUsername("leslie29");
-        $dentist->setRoles(['ROLE_DENTIST']);
+        $dentist1->setTradename("Leslie Serret dentiste équin");
+        $dentist1->setSiret("110393927271122333");
+        $dentist1->setPassword($this->encoder->encodePassword($dentist1, "password"));
+        $dentist1->setName("Leslie");
+        $dentist1->setSurname("Serret");
+        $dentist1->setAddress("Rue de morlaix");
+        $dentist1->setPostalCode("29760");
+        $dentist1->setCity("MORLAIX");
+        $dentist1->setMail("leslie.serret@gmail.com");
+        $dentist1->setUsername("leslie29");
+        $dentist1->setRoles(['ROLE_DENTIST']);
 
-        $manager->persist($dentist);
+        $manager->persist($dentist1);
 
         $dentist = new Dentist();
 
@@ -58,6 +59,20 @@ class DentistFixtures extends Fixture
         $dentist->setRoles(['ROLE_ADMIN']);
 
         $manager->persist($dentist);
+
+        for ($i = 0; $i <= 5; $i++) {
+            $customer = new Customer();
+            $customer->setName("Jennifer");
+            $customer->setSurname("Bouyou");
+            $customer->setAddress("5 rue de claire vue");
+            $customer->setPostalCode("22240");
+            $customer->setCity("FREHEL");
+            $customer->setPhone("0607563127");
+            $customer->setMail("client@gmail.com");
+            $customer->setDentist($dentist1);
+
+            $manager->persist($customer);
+        }
         $manager->flush();
     }
 }

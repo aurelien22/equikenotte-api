@@ -10,17 +10,23 @@ use Doctrine\ORM\Mapping as ORM;
  * @ApiResource()
  * @ORM\Entity(repositoryClass=CustomerRepository::class)
  */
-class Customer
+class Customer extends User
 {
     /**
-     * @ORM\Id
-     * @ORM\GeneratedValue
-     * @ORM\Column(type="integer")
+     * @ORM\ManyToOne(targetEntity=Dentist::class, inversedBy="Customers")
+     * @ORM\JoinColumn(nullable=false)
      */
-    private $id;
+    private $dentist;
 
-    public function getId(): ?int
+    public function getDentist(): ?Dentist
     {
-        return $this->id;
+        return $this->dentist;
+    }
+
+    public function setDentist(?Dentist $dentist): self
+    {
+        $this->dentist = $dentist;
+
+        return $this;
     }
 }

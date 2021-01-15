@@ -3,7 +3,10 @@
 namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
+use ApiPlatform\Core\Annotation\ApiSubresource;
 use App\Repository\DentistRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 
@@ -38,6 +41,17 @@ class Dentist extends User implements UserInterface
      * @ORM\Column(type="string")
      */
     private $password;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Customer::class, mappedBy="dentist")
+     * @ApiSubresource
+     */
+    private $Customers;
+
+    public function __construct()
+    {
+        $this->Customers = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -142,5 +156,35 @@ class Dentist extends User implements UserInterface
     {
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
+    }
+
+    /**
+     * @return Collection|Customer[]
+     */
+    public function getCustomers(): Collection
+    {
+        return $this->Customers;
+    }
+
+    public function addCustomer(Customer $customer): self
+    {
+        if (!$this->Customers->contains($customer)) {
+            $this->Customers[] = $customer;
+            $customer->setDentist($this);
+        }
+
+        return $this;
+    }
+
+    public function removeCustomer(Customer $customer): self
+    {
+        if ($this->Customers->removeElement($customer)) {
+            // set the owning side to null (unless already changed)
+            if ($customer->getDentist() === $this) {
+                $customer->setDentist(null);
+            }
+        }
+
+        return $this;
     }
 }
