@@ -7,6 +7,7 @@ use App\Repository\CustomerRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ApiResource()
@@ -21,7 +22,7 @@ class Customer extends User
     private $dentist;
 
     /**
-     * @ORM\OneToMany(targetEntity=Horse::class, mappedBy="Owner")
+     * @ORM\OneToMany(targetEntity=Horse::class, mappedBy="owner")
      */
     private $horses;
 
@@ -54,7 +55,7 @@ class Customer extends User
     {
         if (!$this->horses->contains($horse)) {
             $this->horses[] = $horse;
-            $horse->setOwner($this);
+            $horse->setowner($this);
         }
 
         return $this;
@@ -64,8 +65,8 @@ class Customer extends User
     {
         if ($this->horses->removeElement($horse)) {
             // set the owning side to null (unless already changed)
-            if ($horse->getOwner() === $this) {
-                $horse->setOwner(null);
+            if ($horse->getowner() === $this) {
+                $horse->setowner(null);
             }
         }
 
