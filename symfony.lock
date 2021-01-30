@@ -116,6 +116,9 @@
     "fig/link-util": {
         "version": "1.1.1"
     },
+    "fzaninotto/faker": {
+        "version": "v1.9.2"
+    },
     "laminas/laminas-code": {
         "version": "3.5.0"
     },

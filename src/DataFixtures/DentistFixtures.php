@@ -7,6 +7,7 @@ use App\Entity\Dentist;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
+use Faker;
 
 class DentistFixtures extends Fixture
 {
@@ -60,15 +61,17 @@ class DentistFixtures extends Fixture
 
         $manager->persist($dentist);
 
+        $faker = Faker\Factory::create('fr_FR');
+
         for ($i = 0; $i <= 5; $i++) {
             $customer = new Customer();
-            $customer->setName("Jennifer");
-            $customer->setSurname("Bouyou");
-            $customer->setAddress("5 rue de claire vue");
-            $customer->setPostalCode("22240");
-            $customer->setCity("FREHEL");
-            $customer->setPhone("0607563127");
-            $customer->setMail("client@gmail.com");
+            $customer->setName($faker->firstName);
+            $customer->setSurname($faker->lastName);
+            $customer->setAddress($faker->streetAddress);
+            $customer->setPostalCode(str_replace(" ", "", $faker->postcode));
+            $customer->setCity($faker->city);
+            $customer->setPhone("0607985673");
+            $customer->setMail($faker->email);
             $customer->setDentist($dentist1);
 
             $manager->persist($customer);
