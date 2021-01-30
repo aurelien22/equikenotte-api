@@ -19,32 +19,19 @@ class HorseRepository extends ServiceEntityRepository
         parent::__construct($registry, Horse::class);
     }
 
-    // /**
-    //  * @return Horse[] Returns an array of Horse objects
-    //  */
-    /*
-    public function findByExampleField($value)
+    public function findHorsesByDentistId($id)
     {
-        return $this->createQueryBuilder('h')
-            ->andWhere('h.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('h.id', 'ASC')
-            ->setMaxResults(10)
+        $qb = $this->createQueryBuilder('h');
+
+        $qb->select('h')
+            ->innerJoin('h.owner', 'c', 'WITH', 'h.owner = c.id')
+            ->where('c.dentist = :id')
+            ->setParameter('id', $id);
+
+        return $qb
             ->getQuery()
             ->getResult()
         ;
     }
-    */
 
-    /*
-    public function findOneBySomeField($value): ?Horse
-    {
-        return $this->createQueryBuilder('h')
-            ->andWhere('h.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
-    }
-    */
 }

@@ -11,7 +11,17 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
- * @ApiResource()
+ * @ApiResource(
+ *     itemOperations={"GET", "PUT", "PATCH", "DELETE", "GET_HORSES"={
+ *          "method"="get",
+ *          "path"="/dentists/{id}/horses",
+ *          "controller"="App\Controller\CustomersHorsesOfConnectDentist",
+ *          "swagger_context"={
+                "summary"="Get customers horse's of the connected dentist",
+ *              "description"="Get customers horse's of the connected dentist",
+ *          }
+ *     }}
+ * )
  * @ORM\Entity(repositoryClass=DentistRepository::class)
  */
 class Dentist extends User implements UserInterface
