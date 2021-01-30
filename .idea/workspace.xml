@@ -18,7 +18,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7f80851d-ec6c-4420-b561-a7e8d2dc3b14" name="Default Changelist" comment="MAJ badge in README.MD">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/HorseRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/HorseRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +190,7 @@
       <workItem from="1610693482215" duration="7071000" />
       <workItem from="1611149294104" duration="970000" />
       <workItem from="1611152890646" duration="2501000" />
-      <workItem from="1611646879282" duration="21444000" />
+      <workItem from="1611646879282" duration="21635000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1606145361441</created>

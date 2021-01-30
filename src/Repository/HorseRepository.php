@@ -33,5 +33,4 @@ class HorseRepository extends ServiceEntityRepository
             ->getResult()
         ;
     }
-
 }
