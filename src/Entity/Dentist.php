@@ -12,15 +12,18 @@ use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ApiResource(
- *     itemOperations={"GET", "PUT", "PATCH", "DELETE", "GET_HORSES"={
- *          "method"="get",
- *          "path"="/dentists/{id}/horses",
- *          "controller"="App\Controller\CustomersHorsesOfConnectDentist",
- *          "swagger_context"={
-                "summary"="Get customers horse's of the connected dentist",
- *              "description"="Get customers horse's of the connected dentist",
+ *     itemOperations={"GET", "PUT", "PATCH", "DELETE",
+ *          "GET_HORSES"={
+ *              "method"="get",
+ *              "path"="/dentists/{id}/horses",
+ *              "controller"="App\Controller\CustomersHorsesOfConnectDentist",
+ *          },
+ *          "GET_ACTS"={
+ *              "method"="get",
+ *              "path"="/dentists/{id}/acts",
+ *              "controller"="App\Controller\ActsOfConnectDentist"
  *          }
- *     }}
+ *     },
  * )
  * @ORM\Entity(repositoryClass=DentistRepository::class)
  */

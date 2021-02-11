@@ -19,32 +19,26 @@ class ActRepository extends ServiceEntityRepository
         parent::__construct($registry, Act::class);
     }
 
-    // /**
-    //  * @return Act[] Returns an array of Act objects
-    //  */
-    /*
-    public function findByExampleField($value)
+    public function findActsByDentistId($id)
     {
-        return $this->createQueryBuilder('a')
-            ->andWhere('a.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('a.id', 'ASC')
-            ->setMaxResults(10)
+        $qb = $this->createQueryBuilder('a');
+
+        $qb->select('a')
+            ->innerJoin('a.horse', 'h', 'WITH', 'a.horse = h.id')
+            ->innerJoin('h.owner', 'o', 'WITH', 'h.owner = o.id')
+            ->where('o.dentist = :id')
+            ->setParameter('id', $id);
+
+        return $qb
             ->getQuery()
             ->getResult()
-        ;
+            ;
     }
-    */
-
-    /*
-    public function findOneBySomeField($value): ?Act
-    {
-        return $this->createQueryBuilder('a')
-            ->andWhere('a.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
-    }
-    */
 }
+
+/*
+$qb->select('h')
+    ->innerJoin('h.owner', 'c', 'WITH', 'h.owner = c.id')
+    ->where('c.dentist = :id')
+    ->setParameter('id', $id);
+*/

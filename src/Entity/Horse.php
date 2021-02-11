@@ -33,7 +33,7 @@ class Horse
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups({"horses_read"})
+     * @Groups({"horses_read", "acts_read"})
      */
     private $name;
 
