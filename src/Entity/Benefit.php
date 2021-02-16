@@ -44,6 +44,12 @@ class Benefit
      */
     private $act;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Dentist::class, inversedBy="benefits")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $dentist;
+
     public function __construct()
     {
         $this->act = new ArrayCollection();
@@ -110,6 +116,18 @@ class Benefit
     public function removeAct(Act $act): self
     {
         $this->act->removeElement($act);
+
+        return $this;
+    }
+
+    public function getDentist(): ?Dentist
+    {
+        return $this->dentist;
+    }
+
+    public function setDentist(?Dentist $dentist): self
+    {
+        $this->dentist = $dentist;
 
         return $this;
     }

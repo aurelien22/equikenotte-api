@@ -26,9 +26,15 @@ class Customer extends User
      */
     private $horses;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Appointment::class, mappedBy="customer")
+     */
+    private $appointments;
+
     public function __construct()
     {
         $this->horses = new ArrayCollection();
+        $this->appointments = new ArrayCollection();
     }
 
     public function getDentist(): ?Dentist
@@ -67,6 +73,36 @@ class Customer extends User
             // set the owning side to null (unless already changed)
             if ($horse->getowner() === $this) {
                 $horse->setowner(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Appointment[]
+     */
+    public function getAppointments(): Collection
+    {
+        return $this->appointments;
+    }
+
+    public function addAppointment(Appointment $appointment): self
+    {
+        if (!$this->appointments->contains($appointment)) {
+            $this->appointments[] = $appointment;
+            $appointment->setCustomer($this);
+        }
+
+        return $this;
+    }
+
+    public function removeAppointment(Appointment $appointment): self
+    {
+        if ($this->appointments->removeElement($appointment)) {
+            // set the owning side to null (unless already changed)
+            if ($appointment->getCustomer() === $this) {
+                $appointment->setCustomer(null);
             }
         }
 

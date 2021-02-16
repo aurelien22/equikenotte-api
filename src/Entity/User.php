@@ -16,11 +16,13 @@ abstract class User
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"appointments_read"})
      */
     protected $name;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"appointments_read"})
      */
     protected $surname;
 

@@ -61,9 +61,23 @@ class Dentist extends User implements UserInterface
      */
     private $Customers;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Benefit::class, mappedBy="dentist", orphanRemoval=true)
+     * @ApiSubresource
+     */
+    private $benefits;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Appointment::class, mappedBy="dentist", orphanRemoval=true)
+     * @ApiSubresource
+     */
+    private $appointments;
+
     public function __construct()
     {
         $this->Customers = new ArrayCollection();
+        $this->benefits = new ArrayCollection();
+        $this->appointments = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -195,6 +209,66 @@ class Dentist extends User implements UserInterface
             // set the owning side to null (unless already changed)
             if ($customer->getDentist() === $this) {
                 $customer->setDentist(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Benefit[]
+     */
+    public function getBenefits(): Collection
+    {
+        return $this->benefits;
+    }
+
+    public function addBenefit(Benefit $benefit): self
+    {
+        if (!$this->benefits->contains($benefit)) {
+            $this->benefits[] = $benefit;
+            $benefit->setDentist($this);
+        }
+
+        return $this;
+    }
+
+    public function removeBenefit(Benefit $benefit): self
+    {
+        if ($this->benefits->removeElement($benefit)) {
+            // set the owning side to null (unless already changed)
+            if ($benefit->getDentist() === $this) {
+                $benefit->setDentist(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Appointment[]
+     */
+    public function getAppointments(): Collection
+    {
+        return $this->appointments;
+    }
+
+    public function addAppointment(Appointment $appointment): self
+    {
+        if (!$this->appointments->contains($appointment)) {
+            $this->appointments[] = $appointment;
+            $appointment->setDentist($this);
+        }
+
+        return $this;
+    }
+
+    public function removeAppointment(Appointment $appointment): self
+    {
+        if ($this->appointments->removeElement($appointment)) {
+            // set the owning side to null (unless already changed)
+            if ($appointment->getDentist() === $this) {
+                $appointment->setDentist(null);
             }
         }
 
